@@ -10,6 +10,17 @@
       "StackName": "amplify-techcartel-dev-224245",
       "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-dev-224245/8618a060-2c9a-11ed-a814-02c016821fc2",
       "AmplifyAppId": "d1ge62fo7q8rcu"
+    },
+    "categories": {
+      "auth": {
+        "techcartel9a21d50e": {}
+      },
+      "function": {
+        "S3Trigger29d5627c": {
+          "deploymentBucketName": "amplify-techcartel-dev-224245-deployment",
+          "s3Key": "amplify-builds/S3Trigger29d5627c-4545616e6850416f5548-build.zip"
+        }
+      }
     }
   },
   "test": {
