@@ -38,6 +38,12 @@
     "categories": {
       "auth": {
         "techcartel9a21d50e": {}
+      },
+      "function": {
+        "S3Trigger29d5627c": {
+          "deploymentBucketName": "amplify-techcartel-test-224601-deployment",
+          "s3Key": "amplify-builds/S3Trigger29d5627c-4545616e6850416f5548-build.zip"
+        }
       }
     }
   },
