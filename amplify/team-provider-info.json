@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-techcartel-dev-224245-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-224245-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-224245-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-techcartel-dev-224245-deployment",
+      "UnauthRoleName": "amplify-techcartel-dev-224245-unauthRole",
+      "StackName": "amplify-techcartel-dev-224245",
+      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-dev-224245/8618a060-2c9a-11ed-a814-02c016821fc2",
+      "AmplifyAppId": "d1ge62fo7q8rcu"
+    }
+  }
+}
