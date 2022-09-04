@@ -23,6 +23,11 @@
       "StackName": "amplify-techcartel-test-224601",
       "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-test-224601/fb80c760-2c9a-11ed-a691-060c223b418e",
       "AmplifyAppId": "d1ge62fo7q8rcu"
+    },
+    "categories": {
+      "auth": {
+        "techcartel9a21d50e": {}
+      }
     }
   },
   "prod": {
