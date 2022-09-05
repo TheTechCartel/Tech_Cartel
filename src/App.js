@@ -1,8 +1,10 @@
+
+
 function App() {
   return (
-    <div className="w-[900px] h-[900px] bg-slate-600">
-     
-    </div>
+    <>
+      <h1>Welcome to tech cartel. Your cartel for every tech resource</h1>
+    </>
   );
 }
 
