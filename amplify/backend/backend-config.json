@@ -40,7 +40,14 @@
               "description": "techcartelapi"
             }
           },
-          "additionalAuthenticationProviders": []
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authtechcartel9a21d50e"
+              }
+            }
+          ]
         }
       }
     }
