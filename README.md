@@ -6,7 +6,8 @@ Technologies used are React and Amplify
 ##Use Case
 
 <br>
-Contributors are <br> Joseph Enoch | https://github.com/Josephenoch
+##Contributors are 
+<br> Joseph Enoch | https://github.com/Josephenoch
 <br> Favour Iheanacho | https://github.com/favor-I
 <br> Jerry Uche | https://github.com/ChubbyJ
 <br> Makinde Victor | https://github.com/zigamak  
