@@ -1,8 +1,6 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
+    <div className="w-[900px] h-[900px] bg-slate-600">
      
     </div>
   );
