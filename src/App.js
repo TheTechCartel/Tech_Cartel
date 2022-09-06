@@ -1,10 +1,11 @@
+import Input from "./components/shared/Input";
 
 
 function App() {
   return (
-    <>
-      <h1>Welcome to tech cartel. Your cartel for every tech resource</h1>
-    </>
+   <main className="w-screen font-clashGrotesk">
+    <Input placeholder="Enter Email Address"/>
+   </main>
   );
 }
 
