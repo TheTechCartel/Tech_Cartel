@@ -1,6 +1,9 @@
 import Input from "./Input";
+import Button from "./Button";
 
 const exports = {
-    Input
+    Input,
+    Button
 }
+
 export default exports

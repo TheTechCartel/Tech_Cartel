@@ -22,5 +22,29 @@
         }
       }
     }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-techcartel-test-220551-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-220551-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-220551-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-techcartel-test-220551-deployment",
+      "UnauthRoleName": "amplify-techcartel-test-220551-unauthRole",
+      "StackName": "amplify-techcartel-test-220551",
+      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-test-220551/40af26d0-2ef1-11ed-b914-06f42b69ae0c",
+      "AmplifyAppId": "dtlbyj13tkp07"
+    },
+    "categories": {
+      "auth": {
+        "techcartel7b3391fb": {}
+      },
+      "function": {
+        "S3Trigger754d3316": {
+          "deploymentBucketName": "amplify-techcartel-test-220551-deployment",
+          "s3Key": "amplify-builds/S3Trigger754d3316-55752f52656430325467-build.zip"
+        }
+      }
+    }
   }
 }

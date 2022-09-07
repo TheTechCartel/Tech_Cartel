@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily:{
         clashGrotesk: 'ClashGrotesk-Variable'
-      }
+      },
+    
     },
   },
   plugins: [],
