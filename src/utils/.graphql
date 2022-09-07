@@ -1,6 +1,3 @@
-# This "input" configures a global authorization rule to enable public access to
-# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
-
 type User
   @model
   @auth(
@@ -16,6 +13,7 @@ type User
   bio: String
   location: String
   isAdmin: Boolean!
+  image: String!
   posts: [Post] @hasMany(indexName: "byAuthor", fields: ["id"])
   nodesCreated: [Node] @hasMany(indexName: "byAuthor", fields: ["id"])
 }

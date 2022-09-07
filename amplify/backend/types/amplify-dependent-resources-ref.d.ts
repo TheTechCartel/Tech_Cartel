@@ -1,6 +1,12 @@
 export type AmplifyDependentResourcesAttributes = {
+    "api": {
+        "techcartel": {
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
+        }
+    },
     "auth": {
-        "techcartel9a21d50e": {
+        "techcartel7b3391fb": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -10,15 +16,8 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientID": "string"
         }
     },
-    "api": {
-        "techcartel": {
-            "GraphQLAPIKeyOutput": "string",
-            "GraphQLAPIIdOutput": "string",
-            "GraphQLAPIEndpointOutput": "string"
-        }
-    },
     "function": {
-        "S3Trigger29d5627c": {
+        "S3Trigger754d3316": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",

@@ -1,10 +1,10 @@
-import Input from "./components/shared/Input";
+import Button from "./components/shared/Button";
 
 
 function App() {
   return (
    <main className="w-screen font-clashGrotesk">
-    <Input placeholder="Enter Email Address"/>
+
    </main>
   );
 }

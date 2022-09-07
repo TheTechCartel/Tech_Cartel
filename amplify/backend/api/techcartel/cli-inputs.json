@@ -4,21 +4,10 @@
     "apiName": "techcartel",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "API_KEY",
-      "expirationTime": 365,
-      "apiKeyExpirationDate": "2023-09-04T22:04:11.808Z",
-      "keyDescription": "techcartelapi"
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authtechcartel7b3391fb"
     },
-    "conflictResolution": {
-      "defaultResolutionStrategy": {
-        "type": "AUTOMERGE"
-      }
-    },
-    "additionalAuthTypes": [
-      {
-        "mode": "AMAZON_COGNITO_USER_POOLS",
-        "cognitoUserPoolId": "authtechcartel9a21d50e"
-      }
-    ]
+    "conflictResolution": {},
+    "additionalAuthTypes": []
   }
 }
