@@ -4,8 +4,12 @@ import { schema } from './schema';
 
 
 
-const { Todo } = initSchema(schema);
+const { User, Post, Path, Node, MiniPath } = initSchema(schema);
 
 export {
-  Todo
+  User,
+  Post,
+  Path,
+  Node,
+  MiniPath
 };
