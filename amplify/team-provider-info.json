@@ -1,63 +1,74 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-techcartel-dev-224245-authRole",
-      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-224245-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-224245-authRole",
+      "AuthRoleName": "amplify-techcartel-dev-81126-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-81126-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-dev-81126-authRole",
       "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-techcartel-dev-224245-deployment",
-      "UnauthRoleName": "amplify-techcartel-dev-224245-unauthRole",
-      "StackName": "amplify-techcartel-dev-224245",
-      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-dev-224245/8618a060-2c9a-11ed-a814-02c016821fc2",
-      "AmplifyAppId": "d1ge62fo7q8rcu"
+      "DeploymentBucketName": "amplify-techcartel-dev-81126-deployment",
+      "UnauthRoleName": "amplify-techcartel-dev-81126-unauthRole",
+      "StackName": "amplify-techcartel-dev-81126",
+      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-dev-81126/4c46bc80-2e7c-11ed-bc88-06f44ccc8ce8",
+      "AmplifyAppId": "dtlbyj13tkp07"
     },
     "categories": {
       "auth": {
-        "techcartel9a21d50e": {}
+        "techcartel7b3391fb": {}
       },
       "function": {
-        "S3Trigger29d5627c": {
-          "deploymentBucketName": "amplify-techcartel-dev-224245-deployment",
-          "s3Key": "amplify-builds/S3Trigger29d5627c-4545616e6850416f5548-build.zip"
+        "S3Trigger754d3316": {
+          "deploymentBucketName": "amplify-techcartel-dev-81126-deployment",
+          "s3Key": "amplify-builds/S3Trigger754d3316-55752f52656430325467-build.zip"
         }
       }
     }
   },
   "test": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-techcartel-test-224601-authRole",
-      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-224601-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-224601-authRole",
+      "AuthRoleName": "amplify-techcartel-test-220551-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-220551-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-test-220551-authRole",
       "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-techcartel-test-224601-deployment",
-      "UnauthRoleName": "amplify-techcartel-test-224601-unauthRole",
-      "StackName": "amplify-techcartel-test-224601",
-      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-test-224601/fb80c760-2c9a-11ed-a691-060c223b418e",
-      "AmplifyAppId": "d1ge62fo7q8rcu"
+      "DeploymentBucketName": "amplify-techcartel-test-220551-deployment",
+      "UnauthRoleName": "amplify-techcartel-test-220551-unauthRole",
+      "StackName": "amplify-techcartel-test-220551",
+      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-test-220551/40af26d0-2ef1-11ed-b914-06f42b69ae0c",
+      "AmplifyAppId": "dtlbyj13tkp07"
     },
     "categories": {
       "auth": {
-        "techcartel9a21d50e": {}
+        "techcartel7b3391fb": {}
       },
       "function": {
-        "S3Trigger29d5627c": {
-          "deploymentBucketName": "amplify-techcartel-test-224601-deployment",
-          "s3Key": "amplify-builds/S3Trigger29d5627c-4545616e6850416f5548-build.zip"
+        "S3Trigger754d3316": {
+          "deploymentBucketName": "amplify-techcartel-test-220551-deployment",
+          "s3Key": "amplify-builds/S3Trigger754d3316-55752f52656430325467-build.zip"
         }
       }
     }
   },
   "prod": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-techcartel-prod-224857-authRole",
-      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-prod-224857-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-prod-224857-authRole",
+      "AuthRoleName": "amplify-techcartel-prod-231319-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-prod-231319-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151995015007:role/amplify-techcartel-prod-231319-authRole",
       "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-techcartel-prod-224857-deployment",
-      "UnauthRoleName": "amplify-techcartel-prod-224857-unauthRole",
-      "StackName": "amplify-techcartel-prod-224857",
-      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-prod-224857/63eca6c0-2c9b-11ed-b5fe-06a5d714e8d0",
-      "AmplifyAppId": "d1ge62fo7q8rcu"
+      "DeploymentBucketName": "amplify-techcartel-prod-231319-deployment",
+      "UnauthRoleName": "amplify-techcartel-prod-231319-unauthRole",
+      "StackName": "amplify-techcartel-prod-231319",
+      "StackId": "arn:aws:cloudformation:eu-central-1:151995015007:stack/amplify-techcartel-prod-231319/4a1c3e20-2efa-11ed-8a42-0a0950f106d8",
+      "AmplifyAppId": "dtlbyj13tkp07"
+    },
+    "categories": {
+      "auth": {
+        "techcartel7b3391fb": {}
+      },
+      "function": {
+        "S3Trigger754d3316": {
+          "deploymentBucketName": "amplify-techcartel-prod-231319-deployment",
+          "s3Key": "amplify-builds/S3Trigger754d3316-55752f52656430325467-build.zip"
+        }
+      }
     }
   }
 }
