@@ -1,21 +1,22 @@
 import React from 'react'
-import { Button, Input, Logo, Meta } from '../components/shared'
+import { Button, Input, Logo } from '../components/shared'
 import Select from '../components/shared/Select'
 
 const SignIn = () => {
   const options = ["Abuja", "Lagos", "New York"]
   return (
     <>
-      <Meta
-        title="Tech Cartel ~ Sign In"
-        description = "Tech Cartel is a community for new developers, designers and people interested in tech. Learn, build and Connect"
-      />
-      
-      <section className="w-screen h-screen space-y-10 bg-tcBG flex justify-center items-center flex-col">
+      <title> Tech Cartel ~ Sign Up</title>
 
-        <Logo/>
+      
+      <section className="w-screen h-screen bg-tcBG flex justify-center items-center flex-col">
+
+        <span className="hidden lg:inline mb-10">
+          <Logo showLarge/>
+        </span>
         <div 
-          className="w-3/4 max-w-[620px] h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center">
+          className="w-3/4 max-w-[620px] h-screen lg:h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center">
+            <span><Logo/></span>
             <Input 
               label="Full Name"
               placeholder="Enter your First and Last name"
