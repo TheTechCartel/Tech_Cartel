@@ -6,14 +6,14 @@ const Logo = ({showSmall}) => {
 
   return (
     <>
-        <span className={`${lgScreen} text-[24px] text-primary font-[300]`}>
+        <h1 className={`${lgScreen} text-[24px] text-primary font-[300]`}>
             the
             <span className="font-extrabold">TechCartel</span>
-        </span>
-        <span className={`${smScreen} relative text-[24px] text-primary font-extrabold`}>
+        </h1>
+        <h1 className={`${smScreen} relative text-[24px] text-primary font-extrabold`}>
             <span>T</span>
             <span className="absolute left-[40%]">C</span>
-        </span>
+        </h1>
     </>
   )
 }

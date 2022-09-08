@@ -11,6 +11,9 @@ module.exports = {
       colors:{
         primary:{
           DEFAULT:"#415A80"
+        },
+        tcBG:{
+          DEFAULT:"#F2F4F8"
         }
       }
     },

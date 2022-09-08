@@ -2,7 +2,7 @@ import SignIn from "./pages/SignIn";
 
 function App() {
   return (
-   <main className="w-screen font-clashGrotesk">
+   <main className="font-clashGrotesk">
     <SignIn/>
    </main>
   );
