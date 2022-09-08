@@ -1,0 +1,14 @@
+{
+  "resourceName": "techcartelstorage",
+  "policyUUID": "1695480d",
+  "bucketName": "techcartelstorage-bucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger29d5627c",
+  "groupAccess": {}
+}
