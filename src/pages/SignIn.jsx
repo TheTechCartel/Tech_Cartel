@@ -69,6 +69,7 @@ const SignIn = () => {
             />
             <Input 
               label="Email"
+              type="email"
               placeholder="example@techcartel.com"
               width="w-[70%]"
               value={inputData?.email}

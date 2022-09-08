@@ -14,7 +14,8 @@ module.exports = {
         },
         tcBG:{
           DEFAULT:"#F2F4F8"
-        }
+        },
+        error:"#F65D5D"
       }
     },
   },

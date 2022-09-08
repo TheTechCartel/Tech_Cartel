@@ -1,26 +1,40 @@
 import React, { useState } from 'react'
 import { Eye } from 'react-feather'
 
-const Input = ({type, width, addedClasses, label,...rest }) => {
+const Input = ({onChange, type, width, addedClasses, label,...rest }) => {
   const [newType, setNewType] = useState(type)
+  const [error, setError] = useState()
   const handleShow = () =>{
     setNewType(prevState=>{
       if(prevState.toLowerCase()==="text")return "password"
       else return "text"
     })
   }
+  const handleError = () =>{
+    setError("Required!")
+  }
+  const handleChange = (e) =>{
+    setError(null)
+    onChange(e)
+  }
   return (
     <div 
       className={`${width}  relative h-[36px] text-[#6D6D6D] space-y-2`}>
-      {label && (
-        <div>
-          {label}
-        </div>
-      )}
+      <div>
+        {label && (
+          <div>
+            {label}
+
+          </div>
+        )}
+        <span className="absolute top-0 right-0 text-error">{error}</span>
+      </div>
       <input 
           
-          className={`${addedClasses} w-[calc(100%-2rem)] relative border-[#6D6D6D] border-[1px] rounded-[5px] font-clashGrotesk  text-lg font-extralight focus:outline-none h-full text-[#6D6D6D] px-4`} 
+          className={`${addedClasses} w-[calc(100%-2rem)] relative ${error ? "border-error":"border-[#6D6D6D]"} border-[1px] rounded-[5px] font-clashGrotesk  text-lg font-extralight focus:outline-none h-full text-[#6D6D6D] px-4`} 
           type={newType} 
+          onInvalid={handleError}
+          onChange={handleChange}
           {...rest}
       />
       {type=== "password" &&
