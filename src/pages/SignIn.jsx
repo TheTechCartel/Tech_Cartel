@@ -12,7 +12,7 @@ const SignIn = () => {
     confirmPassword:""
   }
   const options = Object.values(countries?.countries)
-  const data = options.map(option=>option?.name)
+  const data = options.map(option=>` ${option?.emoji} ${option?.name}`)
   const [inputData, setInputData] = useState({...freshData})
 
   const handleChange = (e) =>{
