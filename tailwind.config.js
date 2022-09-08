@@ -8,7 +8,11 @@ module.exports = {
       fontFamily:{
         clashGrotesk: 'ClashGrotesk-Variable'
       },
-    
+      colors:{
+        primary:{
+          DEFAULT:"#415A80"
+        }
+      }
     },
   },
   plugins: [],

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Logo = ({showSmall}) => {
-  const smScreen = showSmall ? "lg:inline" : "lg:hidden"
+  const smScreen = showSmall ? "" : "lg:hidden"
   const lgScreen = showSmall ? "hidden" : "lg:block hidden"
 
   return (
@@ -14,7 +14,6 @@ const Logo = ({showSmall}) => {
             <span>T</span>
             <span className="absolute left-[40%]">C</span>
         </span>
-        
     </>
   )
 }

@@ -10,7 +10,7 @@ const Input = ({type, width, addedClasses,...rest }) => {
     })
   }
   return (
-    <div className={` bg-red-500 ${width} relative h-[32px]`}>
+    <div className={`${width} relative h-[32px]`}>
       <input 
           className={`${width} ${addedClasses} relative border-[#6D6D6D] border-[1px] rounded-[5px] font-clashGrotesk  text-sm focus:outline-none h-full text-[#6D6D6D] px-4`} 
           type={newType} 
