@@ -5,13 +5,15 @@ import {
   Route,
 } from 'react-router-dom'
 import { Home } from './Pages/Home';
+import Login from './Pages/Login';
 
 function App() {
   return (
-    <div className=' font-clashGrotesk bg-theme-blue-1 '>
+    <div className=' overflow-hidden bg-secondary '>
       <Router>
         <Routes>
           <Route element={<Home />} path='/'></Route>
+          <Route element={<Login />} path='/login'></Route>
         </Routes>
       </Router>
     </div>

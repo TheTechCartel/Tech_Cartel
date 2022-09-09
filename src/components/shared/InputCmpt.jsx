@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Eye } from 'react-feather'
 
-const Input = ({type, width, addedClasses,...rest }) => {
+const InputCmpt = ({type, width, addedClasses,...rest }) => {
   const [newType, setNewType] = useState(type)
   const handleShow = () =>{
     setNewType(prevState=>{
@@ -27,4 +27,4 @@ const Input = ({type, width, addedClasses,...rest }) => {
   )
 }
 
-export default Input
+export default InputCmpt
