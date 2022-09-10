@@ -1,8 +1,14 @@
 import React from 'react'
+import { Logo } from '../components/shared'
 
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <>
+   
+    <Logo/>
+    <div>Login</div>
+
+    </>
   )
 }
 
