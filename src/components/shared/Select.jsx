@@ -21,7 +21,7 @@ const Select = ({onChange, label, defaultOption, options, width, addedClasses, .
         </div>
         
         <select
-            className={`${addedClasses} w-full relative ${error? "border-error" : "border-[#6D6D6D]"} border-[1px] rounded-[5px] font-clashGrotesk  text-lg font-extralight focus:outline-none h-[36px] text-[#6D6D6D] px-4`}
+            className={`${addedClasses} w-full relative ${error? "border-error" : "border-[#6D6D6D]"} border-[1px] rounded-[5px] text-lg font-light focus:outline-none h-[36px] text-[#6D6D6D] px-4`}
             onChange={handleChange}
             onInvalid={handleError}
             {...rest}
@@ -29,7 +29,7 @@ const Select = ({onChange, label, defaultOption, options, width, addedClasses, .
             <option selected disabled value="">{defaultOption}</option>
             {
                 options?.map((item, index)=> {
-                    return <option key={index}>{item}</option>
+                    return <option className="font-light" key={index}>{item}</option>
                 })
             }
         </select>
