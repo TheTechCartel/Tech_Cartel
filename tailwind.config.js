@@ -6,15 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        clashGrotesk: 'ClashGrotesk-Variable'
+        clashGrotesk: 'ClashGrotesk-Variable',
+        alt: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
       },
       colors:{
-        primary:{
-          DEFAULT:"#415A80"
-        },
-        secondary:{
-      DEFAULT: '#F5F5F5'
-        }
+        primary:"#415A80",
+        tcBG:"#F2F4F8",
+        error:"#F65D5D",
+        secondary:'#F5F5F5'
       }
     },
   },
