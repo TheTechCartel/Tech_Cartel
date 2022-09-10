@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Button = ({children, addedClasses,primary, ...rest}) => {
+const Button = ({width, children, height, primary, ...rest}) => {
   const primaryStyles = primary? "bg-primary text-white " : "bg-white text-primary"
   return (
     <button
-      className={`${primaryStyles} ${addedClasses} px-12  min-h-[48px] font-[600] font-clashGrotesk rounded-[10px] text-[18px] border-[1px] border-primary cursor-pointer hover:bg-primary hover:text-white transition-all duration-300`}
+      className={`${primaryStyles} ${width} ${height} min-h-[38px] font-[400] rounded-[8px] text-[18px] border-[1px] border-primary outline-none cursor-pointer hover:bg-primary hover:text-white transition-all duration-300`}
+      {...rest}
     >
         {children}
     </button>
