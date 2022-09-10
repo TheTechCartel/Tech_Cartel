@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImageSection } from '../components/comingSoon/ImageSection'
-import { TextSection } from '../components/comingSoon/TextSection'
+import { ImageSection } from '../components/ComingSoon/ImageSection'
+import { TextSection } from '../components/ComingSoon/TextSection'
 
 const ComingSoon = () => {
   return (
