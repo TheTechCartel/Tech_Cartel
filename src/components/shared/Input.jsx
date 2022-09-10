@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Eye } from 'react-feather'
 
-const InputCmpt = ({type, width, addedClasses,...rest }) => {
+const Input = ({type, width, addedClasses,...rest }) => {
   const [newType, setNewType] = useState(type)
   const handleShow = () =>{
     setNewType(prevState=>{
@@ -18,7 +18,7 @@ const InputCmpt = ({type, width, addedClasses,...rest }) => {
       />
       {type=== "password" &&
         (<div 
-          className=" flex items-center top-0 absolute -right-[20px] justify-center h-full cursor-pointer text-[#6D6D6D]"
+          className=" flex items-center top-2 absolute -right-[20px] justify-center h-full cursor-pointer text-[#6D6D6D]"
           onClick={handleShow}
         >
           <Eye size={10}/>
@@ -27,4 +27,4 @@ const InputCmpt = ({type, width, addedClasses,...rest }) => {
   )
 }
 
-export default InputCmpt
+export default Input

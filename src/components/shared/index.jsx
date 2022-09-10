@@ -1,12 +1,12 @@
-import InputCmpt from "./InputCmpt";
+import Input from "./Input";
 import Button from "./Button";
 import Logo from "./Logo";
-import MetaTag from "./MetaTag";
+import Meta from "./Meta";
 
 
 export {
-    InputCmpt,
+    Input,
     Button,
     Logo,
-    MetaTag
+    Meta
 }

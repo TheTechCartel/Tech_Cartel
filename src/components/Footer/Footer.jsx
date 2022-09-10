@@ -7,7 +7,7 @@ import instagram from './assets/instagram.svg'
 import linkedIn from './assets/linkedIn.svg'
 import youTube from './assets/youTube.svg'
 import { Logo } from '../shared'
-
+import { Facebook } from 'react-feather'
 
 export const Footer = () => {
   const [titleClass] = useState(' font-bold mb-[1.5em]')
@@ -17,11 +17,12 @@ export const Footer = () => {
       <div className=' flex flex-row text-[#FFFFFF] mx-20 space-x-[10em]'>
         {/* Footer row 1 */}
         <div>
-          <Logo location='footer' />
+          <Link to='/' className=' no-underline '><Logo location='footer' /></Link>
           <p className=' text-[.68em] ml-1 mt-[.2em]'> Your cartel for every tech resource</p>
           <p className=' text-[.8em] pt-[2em]'>© 2022 The Tech Cartel.</p>
           {/* Footer social links */}
           <div className=' flex flex-row space-x-4 mt-[3em]'>
+            <Facebook />
             <img className=' w-[1.8em] h-[1.8em]' src={facebook} alt='face book logo for social link'></img>
             <img className=' w-[1.8em] h-[1.8em]' src={mail} alt='face book logo for social link'></img>
             <img className=' w-[1.8em] h-[1.8em]' src={twitter} alt='face book logo for social link'></img>
