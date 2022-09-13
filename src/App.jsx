@@ -1,14 +1,16 @@
 import {SignUp, Home} from "./Pages";
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom'
+
 import awsmobile from "./aws-exports";
 import { Amplify } from "aws-amplify";
 
 
-Amplify.configure(awsmobile)-->
+Amplify.configure(awsmobile)
 
 
 function App() {
