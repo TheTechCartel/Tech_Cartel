@@ -24,6 +24,7 @@ const SignIn = () => {
           />
           <Input 
             placeholder='Enter your password'
+            addedClasses="mt-10"
             width="w-[70%]"
             type='password' 
             label="Password"
