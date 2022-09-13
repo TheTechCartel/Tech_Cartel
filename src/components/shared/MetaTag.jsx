@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Meta = ({
+const MetaTag = ({
     title,
     description
 }) => {
@@ -13,4 +13,4 @@ const Meta = ({
   )
 }
 
-export default Meta
+export default MetaTag

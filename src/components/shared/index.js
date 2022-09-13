@@ -1,9 +1,13 @@
 import Input from "./Input";
 import Button from "./Button";
+import Logo from "./Logo";
+import Select from "./Select";
+import IconContainer from "./IconContainer";
 
-const exports = {
+export {
     Input,
-    Button
+    Button,
+    Logo,
+    Select,
+    IconContainer
 }
-
-export default exports
