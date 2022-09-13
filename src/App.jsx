@@ -1,10 +1,11 @@
-import {SignUp} from "./pages";
+import {SignUp, Home} from "./Pages";
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom'
-import { Home } from './pages';
+
 import awsmobile from "./aws-exports";
 import { Amplify } from "aws-amplify";
 
