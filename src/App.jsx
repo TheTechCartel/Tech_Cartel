@@ -1,10 +1,11 @@
-import {SignUp} from "./pages";
+import {SignUp, Home, ForgotPassword} from "./pages";
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom'
-import { Home } from './pages';
+
 import awsmobile from "./aws-exports";
 import { Amplify } from "aws-amplify";
 
@@ -20,6 +21,8 @@ function App() {
         <Routes>
           <Route element={<Home />} path='/'></Route>
           <Route element={<SignUp/>} path='/signup'></Route>
+          <Route element={<ForgotPassword/>} path='/forgot-password'></Route>
+
         </Routes>
       </Router>
     </main>
