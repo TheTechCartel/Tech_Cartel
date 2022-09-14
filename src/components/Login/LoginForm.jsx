@@ -16,17 +16,17 @@ export const LoginForm = () => {
             <label>Password</label>
             <Input placeholder='Enter your password' addedClasses='mt-[.5em]' width={inputWidth} type='password' />
         </div>
-        <div className=' flex flex-row items-center mt-[3em] ml-[4.5em] space-x-[24.2em] w-[453px] text-[.7em] font-semibold border-[1px] border-[red]'>
+        <div className=' flex flex-row items-center mt-[3em] ml-[3em] space-x-[21.2em] w-[453px] text-[.7em] font-semibold'>
             <div className=' flex flex-row items-center space-x-2'>
-            <Input type='checkbox' />
+            <input type='checkbox' />
             <p>Remember me</p>
             </div>
             <Link to='#'><p>Forgot password</p></Link>
         </div>
-        <Button primary addedClasses='mt-[2em]'>Login</Button>
+        <div className=' mt-6'><Button primary width="w-[250px]" addedClasses='mt-[2em]'>Login</Button></div>
         <div className=' flex flex-row space-x-[.3em] mt-[2em]'>
             <p>Need an account?</p>
-            <Link to='#'>Sign Up</Link>
+            <Link className=' underline text-primary' to='/sign-up'>Sign Up</Link>
         </div>
     </form>
     </>

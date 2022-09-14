@@ -1,9 +1,9 @@
 import React from 'react'
-import { Footer } from '../components/Footer/Footer'
 import SectionOne from '../components/Home/SectionOne'
-import { Navbar } from '../components/Navbar/Navbar'
 import Meta from '../components/shared/Meta'
-import { ComingSoon } from './ComingSoon'
+import Navbar from '../layouts/Navbar/Navbar'
+import Footer from '../layouts/Footer/Footer'
+import ComingSoon from './ComingSoon'
 
 
 export const Home = () => {
@@ -14,8 +14,10 @@ export const Home = () => {
             description = "Tech Cartel is a community for new developers, designers and people interested in tech. Learn, build and Connect"
         />
         <Navbar />
-        <ComingSoon />
-        <SectionOne />
+        <div className=' mx-20'>
+          <SectionOne />
+        </div>
+        {/* <ComingSoon /> */}
         <Footer />
     </>
   )

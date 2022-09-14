@@ -1,5 +1,5 @@
 import ComingSoon from "./ComingSoon";
-import Home from "./Home";
+import { Home } from "./Home";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 

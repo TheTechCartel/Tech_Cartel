@@ -1,6 +1,7 @@
 import React, {  useState } from 'react'
 import { Button, Input, Logo } from '../components/shared'
 import Select from '../components/shared/Select'
+import { Link } from 'react-router-dom'
 import{ Auth} from "aws-amplify"
 import countries from "countries-list"
 
@@ -24,7 +25,7 @@ const SignUp = () => {
       return {...newArr}
     })
   }
-  const  handleSignIn = async (e)=>{
+  const  handleSignUp = async (e)=>{
     e.preventDefault()
     if(inputData?.password !== inputData?.confirmPassword) return false
     try {
@@ -50,20 +51,20 @@ const SignUp = () => {
       
       <section className="w-screen h-screen bg-tcBG flex justify-center items-center flex-col">
 
-        <span className="hidden lg:inline mb-10">
-          <Logo/>
-        </span>
+        <div className="hidden lg:inline mb-10">
+          <Link className=' no-underline' to='/'><Logo/></Link>
+        </div>
         <form 
-          className="w-3/4 max-w-[620px] h-screen lg:h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center"
-          onSubmit={handleSignIn}
+          className="w-3/4 max-w-[620px] pl-[-.5em] h-screen lg:h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center"
+          onSubmit={handleSignUp}
         >
             <span className="lg:hidden">
-              <Logo/>
+              <Link className=' no-underline' to='/'><Logo/></Link>
             </span>
-            <Input 
+            <Input              
               label="Full Name"
               placeholder="Enter your First and Last name"
-              width="w-[70%]"
+              width="w-[426px]"
               value={inputData?.name}
               onChange={handleChange}
               name="name"
@@ -73,14 +74,14 @@ const SignUp = () => {
               label="Email"
               type="email"
               placeholder="example@techcartel.com"
-              width="w-[70%]"
+              width="w-[426px]"
               value={inputData?.email}
               onChange={handleChange}
               name="email"
               required
             />
             <Select
-              width="w-[70%]"
+              width="w-[426px]"
               defaultOption="Enter Location"  
               options={data}
               label="Choose your Country"
@@ -90,7 +91,7 @@ const SignUp = () => {
               required
             />
             <Input 
-              width="w-[70%]"
+              width="w-[426px]"
               placeholder="Enter your Password"
               type="password"
               label="Password"
@@ -100,7 +101,7 @@ const SignUp = () => {
               required
             />
             <Input 
-              width="w-[70%]"
+              width="w-[426px]"
               placeholder="Confirm your Password"
               type="password"
               label="Confirm Password"
@@ -115,10 +116,10 @@ const SignUp = () => {
             >
               Sign Up
             </Button>
-            <span>
+            <p>
               Already have an account?
-              <span className="text-primary underline"> Log in</span>
-            </span>
+              <span className="text-primary underline"><Link to='/login'>Log in</Link></span>
+            </p>
         </form>
 
       </section>

@@ -12,13 +12,12 @@ export const TextSection = () => {
         </div>
         <div>
             <p className=' text-[black] text-[.86em] mg font-semibold'>Get notified when we launch.</p>
-            <div className='flex flex-row justify-center my-[.5em]'>
-                {/* <input className=' bg-inherit h-[2em] rounded-md w-[15em] border-[red]-[1px] ' placeholder='Enter your email address'></input> */}
+            <div className='flex flex-row items-center my-[.5em]'>
                 <Input 
                   type='text' 
                   addedClasses='bg-secondary text-[#6D6D6D] border-[1px]  border-[#6D6D6D]' 
                   placeholder ='Enter your email address'
-                  width="w-[400px]"
+                  width="w-[300px]"
                 />
                 <Link to='/'>
                   <Button primary width="w-[100px]">Notify Me</Button>
