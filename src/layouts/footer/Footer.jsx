@@ -7,7 +7,7 @@ import { IconContainer, Logo } from '../../components/shared'
 const Footer = () => {
   const titleClass = "font-bold mb-[1.5em]"
   return (
-    <footer className=' bg-primary  h-[220px] pt-[4em]'>
+    <footer className=' bg-primary  h-[320px] pt-[4em]'>
 
       <div className=' flex flex-row text-[#FFFFFF] mx-20 space-x-[10em]'>
         {/* Footer row 1 */}
