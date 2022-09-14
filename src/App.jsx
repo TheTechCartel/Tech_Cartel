@@ -1,4 +1,4 @@
-import {SignUp, Home} from "./Pages";
+import {SignUp, Home, ForgotPassword} from "./pages";
 
 import {
   BrowserRouter as Router,
@@ -21,6 +21,8 @@ function App() {
         <Routes>
           <Route element={<Home />} path='/'></Route>
           <Route element={<SignUp/>} path='/signup'></Route>
+          <Route element={<ForgotPassword/>} path='/forgot-password'></Route>
+
         </Routes>
       </Router>
     </main>
