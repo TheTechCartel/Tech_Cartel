@@ -3,6 +3,7 @@ import { Button, Input, Logo } from '../components/shared'
 import Select from '../components/shared/Select'
 import{ Auth} from "aws-amplify"
 import countries from "countries-list"
+import { Link } from 'react-router-dom'
 
 
 const SignUp = () => {
@@ -54,7 +55,7 @@ const SignUp = () => {
           <Logo/>
         </span>
         <form 
-          className="w-3/4 max-w-[620px] h-screen lg:h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center"
+          className=" md:shadow-md w-3/4 max-w-[620px] h-screen lg:h-[700px] min-w-[500px] justify-evenly bg-white  rounded-[10px] flex flex-col items-center"
           onSubmit={handleSignIn}
         >
             <span className="lg:hidden">
@@ -117,7 +118,7 @@ const SignUp = () => {
             </Button>
             <span>
               Already have an account?
-              <span className="text-primary underline"> Log in</span>
+              <Link to="/sign-in" className="text-primary underline">Log in</Link>
             </span>
         </form>
 

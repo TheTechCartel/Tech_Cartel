@@ -1,17 +1,22 @@
 import React from 'react'
-import Footer  from '../layouts/footer/Footer'
-import Navbar  from '../layouts/navbar/Navbar'
-import ComingSoon from './ComingSoon'
+import SectionOne from '../components/Home/SectionOne'
+import Navbar from '../layouts/navbar/Navbar'
+import Footer from '../layouts/footer/Footer'
 
 
 const Home = () => {
   return (
-    <div className=''>
-        <Navbar />
-        <ComingSoon />
-        <Footer />
-    </div>
-  )
-}
+    <>
+      <title>Tech Cartel ~ Home</title>
 
-export default Home;
+      <Navbar />
+      <div className=' mx-20'>
+        <SectionOne />
+      </div>
+      {/* <ComingSoon /> */}
+      <Footer />
+    </>
+ 
+ )
+}
+export default Home

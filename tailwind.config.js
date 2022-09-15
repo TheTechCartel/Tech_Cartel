@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily:{
         clashGrotesk: 'ClashGrotesk-Variable',
-        alt: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+        alt: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+        workSans : "'Work Sans', sans-serif;",
       },
       colors:{
         primary:"#415A80",

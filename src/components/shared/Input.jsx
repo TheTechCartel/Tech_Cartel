@@ -20,7 +20,7 @@ const Input = ({onChange, type, width, addedClasses, label,...rest }) => {
   }
   return (
     <div 
-      className={`${width}  relative h-[36px] text-[#6D6D6D] space-y-2`}>
+      className={`${width} relative h-[36px] text-[#6D6D6D] space-y-2`}>
       {(error || label  ) && <div>
         {label && (
           <div>
@@ -31,8 +31,7 @@ const Input = ({onChange, type, width, addedClasses, label,...rest }) => {
         {error &&<span className="absolute top-0 right-0 text-error">{error}</span>}
       </div>}
       <input 
-          
-          className={`${addedClasses} w-[calc(100%-2rem)] relative ${error ? "border-error":"border-[#6D6D6D]"} border-[1px] rounded-[5px]  text-lg font-extralight focus:outline-none h-full text-[#6D6D6D] px-4`} 
+          className={`${addedClasses} w-full ${error ? "border-error":"border-[#6D6D6D]"} border-[1px] rounded-[5px]  text-lg font-extralight focus:outline-none h-full text-[#6D6D6D] px-4`} 
           type={newType} 
           onInvalid={handleError}
           onChange={handleChange}
@@ -40,7 +39,7 @@ const Input = ({onChange, type, width, addedClasses, label,...rest }) => {
       />
       {type=== "password" &&
         (<div 
-          className=" flex items-center top-[50%] -translate-x-1/2 absolute right-[10px] justify-center h-full cursor-pointer "
+          className=" flex absolute top-[36px] right-[10px] h-fit cursor-pointer"
           onClick={handleShow}
         >
           <Eye size={10}/>
