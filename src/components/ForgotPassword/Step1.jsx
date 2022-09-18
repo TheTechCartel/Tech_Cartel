@@ -1,5 +1,6 @@
 import { Auth } from 'aws-amplify'
 import React from 'react'
+import { toast } from 'react-toastify'
 import { Button, Input } from '../shared'
 
 const Step1 = ({ data, setShowStepTwo, handleChange}) => {
@@ -7,10 +8,11 @@ const Step1 = ({ data, setShowStepTwo, handleChange}) => {
     e.preventDefault()
     try{
       await Auth.forgotPassword(data?.email)
+      toast.success("Confirmation Code Sent")
       setShowStepTwo(true)
     }
     catch(e){
-      console.error(e?.message)
+      toast.error(e?.message)
     }
   }
   return (
