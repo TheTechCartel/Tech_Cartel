@@ -1,14 +1,43 @@
+import { Auth } from 'aws-amplify'
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Input, Logo } from '../components/shared'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignIn = () => {
+  const userData = {
+    email:"",
+    password:""
+  }
+  const [data, setData] = useState(userData)
+
+  const handleChange = (e) => {
+    const {name, value} = e.target
+
+    setData(prevState=>{
+      return {...prevState, [name]:value}
+    })
+  }
+
+  const handleSubmit = async (e) =>{
+    e.preventDefault()
+    try{
+      // eslint-disable-next-line no-unused-vars
+      const{user} = await Auth.signIn(data?.email, data?.password)
+      toast.success("Successfully LoggedIn")
+    }
+    catch(e){
+      toast.error(e.message)
+    }
+  }
   return (
     <>
       <title> Tech Cartel ~ Sign Up</title>
 
         
-      <section className="w-screen h-screen bg-tcBG flex justify-center items-center flex-col">
+      <section onSubmit={handleSubmit} className="w-screen h-screen bg-tcBG flex justify-center items-center flex-col">
 
         <span className="hidden lg:inline mb-10">
           <Logo/>
@@ -20,6 +49,9 @@ const SignIn = () => {
             width="w-[70%]" 
             type='email'
             label="Email"
+            name="email"
+            value={data?.email}
+            onChange={handleChange}
             required
           />
           <Input 
@@ -28,6 +60,9 @@ const SignIn = () => {
             width="w-[70%]"
             type='password' 
             label="Password"
+            name="password"
+            onChange={handleChange}
+            value={data?.password}
             required
           />
           <div className=' flex flex-row items-center mt-[3em] ml-[3em] space-x-[21.2em] w-[453px] text-[.7em] font-semibold'>

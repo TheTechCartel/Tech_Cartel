@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Auth } from 'aws-amplify'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { Button, Input, Logo } from '../components/shared'
+import { toast } from 'react-toastify'
 
 const ConfirmUser = () => {
   // eslint-disable-next-line no-unused-vars
@@ -34,9 +35,10 @@ const ConfirmUser = () => {
     e.preventDefault()
     try{
         Auth.confirmSignUp(data?.email?.toLowerCase(), data?.code)
-        navigate("/sign-in")
+        toast.success("Password Successfully Changed")
+        setTimeout(()=>navigate("/sign-in"),2000)
     }catch(e){
-        console.error(e.message)
+        toast.error(e.message)
     }
   }
 
@@ -45,9 +47,10 @@ const ConfirmUser = () => {
     if(!data.email) return
     try{
       await Auth.resendSignUp(data?.email?.toLowerCase())
+      toast.success("Code on the way")
       setTimer(30)
     }catch(e){
-      console.error(e.message)
+      toast.error(e.message)
     }
   }
   return (
