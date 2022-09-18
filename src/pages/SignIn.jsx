@@ -34,7 +34,7 @@ const SignIn = () => {
               <input type='checkbox' />
               <p>Remember me</p>
             </div>
-            <Link to='#'><p>Forgot password</p></Link>
+            <Link to='/forgot-password'><p>Forgot password</p></Link>
           </div>
           <Button primary width="w-[50%]" addedClasses='mt-[2em]'>Login</Button>
           <div className=' flex flex-row'>
