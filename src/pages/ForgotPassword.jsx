@@ -26,9 +26,9 @@ const ForgotPassword = () => {
         <Logo/>
         {
           !showStepTwo ? 
-            <Step1 data={data} handleChange={handleChange} setShowStep2={setShowStepTwo}/> 
+            <Step1 data={data} handleChange={handleChange} setShowStepTwo={setShowStepTwo}/> 
           : 
-            <Step2/>
+            <Step2 data={data} handleChange={handleChange} setShowStepTwo={setShowStepTwo}/>
         }
       </div>
     </>
