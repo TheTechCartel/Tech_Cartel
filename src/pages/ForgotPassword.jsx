@@ -1,10 +1,22 @@
-import React from 'react'
-import { Button, Input, Logo } from '../components/shared'
+import React, { useState } from 'react'
+import { Step1, Step2 } from '../components/ForgotPassword'
+import {  Logo } from '../components/shared'
 
 const ForgotPassword = () => {
-   
-  const handleSubmit = (e) =>{
-    e.preventDefault()
+  const freshData = {
+    email:"",
+    code:"",
+    password:"",
+    confirmPassword:""
+  }
+  const [showStepTwo, setShowStepTwo] = useState(false)
+  const [data, setData] = useState(freshData)
+
+  const handleChange = (e) =>{
+    const { name, value } = e.target 
+    setData(prevState=>{
+      return {...prevState, [name]:value}
+    })
   }
   return (
     <>
@@ -12,15 +24,12 @@ const ForgotPassword = () => {
       <div className=' flex flex-col justify-center space-y-4 items-center h-screen'>
     
         <Logo/>
-        <form onSubmit={handleSubmit} className='md:shadow-md bg-[#FFFFFF] rounded-[10px] justify-evenly h-[50%] w-3/4 max-w-[620px] min-w-[500px] flex flex-col items-center '>
-            <p className=' font-bold text-[1.5em]'> Reset Password</p>
-            <p className='text-[1em]'>Reset your password by providing your email address</p>
-            
-            <div className="w-full flex flex-col items-center justify-center space-y-20">
-              <Input required label="Email" placeholder='johndoe@example.com' width='w-[70%]' type='email' />
-              <Button primary width="w-[50%]">Next</Button>
-            </div>
-        </form>
+        {
+          !showStepTwo ? 
+            <Step1 data={data} handleChange={handleChange} setShowStepTwo={setShowStepTwo}/> 
+          : 
+            <Step2 data={data} handleChange={handleChange} setShowStepTwo={setShowStepTwo}/>
+        }
       </div>
     </>
     

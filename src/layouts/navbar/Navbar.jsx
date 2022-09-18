@@ -10,16 +10,16 @@ const Navbar = () => {
                 <Link className=' no-underline ' to='/'><Logo /></Link>
                 {/* Nav links */}
                 <ul className=' flex flex-row list-none  space-x-16 mt-[.2em] '>
-                    <li className='  '><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/'>Home</Link></li>
-                    <li className='  '><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/learning-path'>Learning paths</Link></li>
-                    <li className='  '><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/about'>About</Link></li>
+                    <li><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/'>Home</Link></li>
+                    <li><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/learning-path'>Learning paths</Link></li>
+                    <li><Link className=' hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] text-[#000] no-underline' to='/about'>About</Link></li>
                 </ul>
                 
                 <div className='flex flex-row items-center space-x-4 list-none'>
                     <span className='hover:text-primary'>
                         <Link className=' text-[#000] hover:text-primary hover:underline hover:decoration-[primary]  hover:decoration-4 hover:underline-offset-[.5em] no-underline'  to='/sign-in'>Sign In</Link>
                     </span>
-                    <Link className='' to='/sign-up'><Button primary width="w-[100px]">Sign up</Button></Link>
+                    <Link className='' to='/sign-up'><Button primary><p className="mx-[1em] text-[14px]">Sign up</p></Button></Link>
                 </div>
             </div>
             <div>

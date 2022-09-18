@@ -3,12 +3,13 @@ import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import ForgotPassword from "./ForgotPassword";
 import Home from "./Home";
-
+import ConfirmUser from "./ConfirmUser";
 
 export {
-    ComingSoon,
     Home,
     SignIn,
     SignUp,
+    ComingSoon,
+    ConfirmUser,
     ForgotPassword
 }

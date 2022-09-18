@@ -3,7 +3,8 @@ import { Button, Input, Logo } from '../components/shared'
 import Select from '../components/shared/Select'
 import{ Auth} from "aws-amplify"
 import countries from "countries-list"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
 const SignUp = () => {
@@ -14,9 +15,12 @@ const SignUp = () => {
     password:"",
     confirmPassword:""
   }
+  const [inputData, setInputData] = useState({...freshData})
+
   const options = Object.values(countries?.countries)
   const data = options.map(option=>` ${option?.emoji} ${option?.name}`)
-  const [inputData, setInputData] = useState({...freshData})
+
+  const navigate = useNavigate();
 
   const handleChange = (e) =>{
     const { name, value} = e.target
@@ -27,8 +31,12 @@ const SignUp = () => {
   }
   const  handleSignIn = async (e)=>{
     e.preventDefault()
-    if(inputData?.password !== inputData?.confirmPassword) return false
+    if(inputData?.password !== inputData?.confirmPassword){
+      toast.error("Passwords Must be the same")
+      return
+    }
     try {
+      // eslint-disable-next-line no-unused-vars
       const { user } = await Auth.signUp({
           username: inputData?.email,
           password: inputData?.password,
@@ -36,11 +44,12 @@ const SignUp = () => {
               email:inputData?.email,
               address: inputData?.location
           } 
-         
       });
-      console.log(user);
+      toast.success("Account Successfully Created")
+      toast.success("Confirmation Code Sent")
+      setTimeout(()=>navigate(`/confirm-user?email=${inputData?.email}`),2000)
   } catch (error) {
-      console.log('error signing up:', error);
+    toast.error(error.message)
   }
 
   }
