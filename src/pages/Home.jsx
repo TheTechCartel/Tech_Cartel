@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <>
       <title>Tech Cartel ~ Home</title>
-
       <Navbar />
       <div className=' mx-20'>
         <SectionOne />

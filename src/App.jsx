@@ -1,5 +1,5 @@
 
-import {SignIn, SignUp, Home, ComingSoon, ForgotPassword} from "./pages";
+import {SignIn, SignUp, Home, ComingSoon, ForgotPassword, ConfirmUser} from "./pages";
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,6 +23,8 @@ function App() {
           <Route element={<SignUp/>} path='/sign-up'></Route>
           <Route element={<SignIn/>} path='/sign-in'></Route>
           <Route element={<ForgotPassword/>} path='/forgot-password'></Route>
+          <Route element={<ConfirmUser/>} path='/confirm-user'></Route>
+
           <Route element={<ComingSoon />} path='/about'></Route>
           <Route element={<ComingSoon />} path='/learning-path'></Route>
       </Routes>

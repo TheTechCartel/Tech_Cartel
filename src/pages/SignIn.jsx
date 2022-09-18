@@ -24,17 +24,18 @@ const SignIn = () => {
           />
           <Input 
             placeholder='Enter your password'
+            addedClasses="mt-10"
             width="w-[70%]"
             type='password' 
             label="Password"
             required
           />
           <div className=' flex flex-row items-center mt-[3em] ml-[3em] space-x-[21.2em] w-[453px] text-[.7em] font-semibold'>
-              <div className=' flex flex-row items-center space-x-2'>
+            <div className=' flex flex-row items-center space-x-2'>
               <input type='checkbox' />
               <p>Remember me</p>
-              </div>
-              <Link to='#'><p>Forgot password</p></Link>
+            </div>
+            <Link to='/forgot-password'><p>Forgot password</p></Link>
           </div>
           <Button primary width="w-[50%]" addedClasses='mt-[2em]'>Login</Button>
           <div className=' flex flex-row'>
