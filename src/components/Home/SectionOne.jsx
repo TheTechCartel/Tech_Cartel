@@ -11,7 +11,7 @@ const SectionOne = () => {
       <p className=' text-[12px] w-[400px]'>Acquire in-demand tech skills with a clear and concise roadmap.</p>
       <div className=' space-x-5 mt-[2.5em]'>
         <Button primary> <p className=' text-[12px] mx-[1em]'>Get started</p></Button>
-        <Button > <p className='mx-[1em]'>Learn more</p></Button>
+        <Button > <p className=' text-[12px] mx-[1em]'>Learn more</p></Button>
       </div>
     </div>
     <div>
