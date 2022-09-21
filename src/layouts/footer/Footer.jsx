@@ -5,11 +5,11 @@ import { IconContainer, Logo } from '../../components/shared'
 
 
 const Footer = () => {
-  const titleClass = "font-bold mb-[.6em]"
+  const titleClass = "font-bold mb-[1.5em]"
   return (
-    <footer className=' bg-primary  h-[350px] pt-[4em]'>
+    <footer className=' bg-primary  h-[320px] pt-[4em]'>
 
-      <div className=' flex flex-row text-[#FFFFFF] mx-20 space-x-[12em]'>
+      <div className=' flex flex-row text-[#FFFFFF] mx-20 space-x-[10em]'>
         {/* Footer row 1 */}
         <div>
           <Logo secondary />
@@ -40,39 +40,33 @@ const Footer = () => {
         {/* Footer row 2 */}
         <div className=' flex flex-col'>
           <h4 className={` ${titleClass}`}>Products</h4>
-          <div className=' flex flex-col font-thin'>
+          <div className=' flex flex-col '>
           <h4>Home</h4>
           <h4>Log In</h4>
           <h4>Sign Up</h4>
           </div>
         </div>
         {/* Footer row 3 */}
-        <div className=' flex flex-col'>
+        <div className=' flex flex-col font-thin'>
           <h4 className={` ${titleClass}`}>Company</h4>
-          <div className=' font-thin'>
-            <h4>About Us</h4>
-            <h4>Volunteer</h4>
-          </div>
+          <h4>About Us</h4>
+          <h4>Volunteer</h4>
         </div>
         {/* Footer row 2 */}
         <div className=' flex flex-col'>
           <h4 className={` ${titleClass}`}>Learning Paths</h4>
-          <div className=' flex flex-col'>
+          <div className=' flex flex-row space-x-[4em] '>
             <div>
               <h4 className={` ${titleClass} `}>Courses</h4>
-              <div className=' font-thin'>
-                <h4>Web Development</h4>
-                <h4>Product Design(UI/UX)</h4>
-              </div>
+              <h4>Web Development</h4>
+              <h4>Product Design(UI/UX)</h4>
             </div>
             <div>
               <h4 className={` ${titleClass}`}>Languages</h4>
-              <div className=' font-thin'>
-                <h4>Html& css</h4>
-                <h4>Python</h4>
-                <h4>Javascript</h4>
-                <h4>SQL</h4>
-              </div>
+              <h4>Html& css</h4>
+              <h4>Python</h4>
+              <h4>Javascript</h4>
+              <h4>SQL</h4>
             </div>
           </div>
         </div>
